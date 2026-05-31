@@ -75,6 +75,22 @@ cargo run --example demo
 export ANTHROPIC_API_KEY=sk-ant-...
 export DEMO_MODE=false
 cargo run --release
+
+## Frontend Demo
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+http://localhost:3000
+```
+The demo works without API keys — it uses synthetic market data validated against real African FX corridor spreads.
+
+To enable live AI reasoning: 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+npm run dev
 ```
 
 ## Architecture Decision Records
